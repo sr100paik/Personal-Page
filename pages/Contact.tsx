@@ -9,8 +9,8 @@ const Contact: React.FC = () => {
   // 1. 발급받으신 Access Key
   const WEB3FORMS_ACCESS_KEY = "42893392-afa4-43c4-a5c5-e94c47cf208b";
   
-  // 2. Cloudinary 이력서 직링크 (인코딩 처리됨)
-  const RESUME_URL = "https://res.cloudinary.com/dj1xp2ojh/image/upload/%EB%B0%B1%EC%8A%B9%EB%A3%A1_%EC%9D%B4%EB%A0%A5%EC%84%9C_20251223_edxuvp.pdf";
+  // 2. Vercel Blob 이력서 직링크
+  const RESUME_URL = "https://foj9p10hxsmxhnzm.public.blob.vercel-storage.com/Daniel_SR_Paik_CV.pdf";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
