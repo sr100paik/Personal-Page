@@ -52,11 +52,11 @@ const Contact: React.FC = () => {
   if (submitted) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center bg-white px-4 text-center">
-        <div className="max-w-md bg-slate-50 p-12 document-shadow border border-slate-100">
+        <div className="max-w-lg bg-slate-50 p-12 document-shadow border border-slate-100 w-full">
           <div className="w-16 h-16 bg-slate-900 text-white rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle size={32} />
           </div>
-          <h2 className="serif text-2xl font-bold mb-4">문의가 성공적으로 전달되었습니다</h2>
+          <h2 className="serif text-2xl font-bold mb-4 whitespace-nowrap">문의가 성공적으로 전달되었습니다</h2>
           <p className="text-slate-600 mb-8 leading-relaxed">
             보내주신 문의 내용은 즉시 이메일로 발송되었습니다.<br />
             빠른 시일 내에 기재해주신 연락처로 답변 드리겠습니다.
