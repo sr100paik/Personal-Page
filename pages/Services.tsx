@@ -1,13 +1,21 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Target, BarChart4, Globe, Zap, Users, Search } from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
     <div className="bg-slate-50 pb-24">
       {/* Hero */}
-      <section className="bg-white py-20 border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-white py-24 border-b border-slate-200 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://res.cloudinary.com/dj1xp2ojh/image/upload/v1766722183/%ED%8E%9C%EA%B3%BC_%ED%83%AD_y1wyug.jpg" 
+            alt="Workspace Background" 
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="serif text-4xl font-bold text-slate-900 mb-6">Expert Services</h1>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
             상장사의 신뢰 구축과 스타트업의 비약적 성장을 위해<br />
@@ -120,9 +128,9 @@ const Services: React.FC = () => {
             현재 기업의 IR 현황이나 ESG 지표, 또는 준비 중인 딜에 대해 
             30분 이내의 가벼운 티타임으로 인사이트를 나눠보세요.
           </p>
-          <button className="bg-slate-900 text-white px-8 py-3 rounded-sm font-semibold hover:bg-slate-800 transition-colors">
+          <Link to="/contact" className="inline-block bg-slate-900 text-white px-8 py-3 rounded-sm font-semibold hover:bg-slate-800 transition-colors">
             무료 진단 문의하기
-          </button>
+          </Link>
         </div>
       </section>
     </div>

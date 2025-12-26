@@ -33,8 +33,15 @@ const TrackRecord: React.FC = () => {
   return (
     <div className="bg-white min-h-screen pb-24">
       {/* Page Header */}
-      <section className="bg-slate-900 py-20 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-slate-900 py-24 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://res.cloudinary.com/dj1xp2ojh/image/upload/v1766722184/%EC%84%B1%EC%9E%A5_%EA%B7%B8%EB%9E%98%ED%94%84_qvsm7p.jpg" 
+            alt="Growth Graph Background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="serif text-4xl font-bold mb-4">Track Record</h1>
           <p className="text-slate-400 max-w-2xl text-lg">
             30년의 실무 경력과 20년의 경영 경험이 응축된 결과입니다. 
@@ -44,10 +51,10 @@ const TrackRecord: React.FC = () => {
       </section>
 
       {/* Main Content */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
         <div className="grid gap-12">
           {cases.map((item, index) => (
-            <div key={index} className="bg-white document-shadow border border-slate-100 flex flex-col lg:flex-row overflow-hidden">
+            <div key={index} className="bg-white document-shadow border border-slate-100 flex flex-col lg:flex-row overflow-hidden hover:border-slate-300 transition-all">
               <div className="lg:w-1/3 bg-slate-50 p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-100">
                 <div>
                   <div className="flex items-center gap-2 text-slate-400 mb-4">

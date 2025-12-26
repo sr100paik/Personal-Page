@@ -7,9 +7,9 @@ const About: React.FC = () => {
       <section className="max-w-4xl mx-auto px-4 py-24">
         <div className="mb-20 text-center">
           <img 
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400" 
+            src="https://res.cloudinary.com/dj1xp2ojh/image/upload/v1766722184/Whisk_d83f2cffc475960b878402f24b866c7bdr_nlamep.png" 
             alt="Daniel SR, Paik Profile" 
-            className="w-48 h-48 rounded-full mx-auto object-cover grayscale mb-8 border-4 border-slate-100"
+            className="w-48 h-48 rounded-full mx-auto object-cover mb-8 border-4 border-slate-100 shadow-xl"
           />
           <h1 className="serif text-4xl font-bold text-slate-900 mb-4">백승룡</h1>
           <p className="text-slate-500 font-medium tracking-widest uppercase">IR · PR ·ESG · Strategy Expert</p>

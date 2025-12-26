@@ -10,11 +10,11 @@ const Main: React.FC = () => {
       <section className="relative h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1600" 
-            alt="Office Executive" 
-            className="w-full h-full object-cover grayscale opacity-20"
+            src="https://res.cloudinary.com/dj1xp2ojh/image/upload/v1766722185/%EB%A9%94%EC%9D%B8%EB%B0%B0%EA%B2%BD_3_df7tkr.png" 
+            alt="Executive Office Background" 
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-transparent"></div>
+          <div className="absolute inset-0 bg-slate-900/60"></div>
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
@@ -52,7 +52,7 @@ const Main: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { label: "DART 공시 적시성", value: "100%", desc: "단 한 건의 불성실 공시 없음", icon: ShieldCheck },
+              { label: "DART 공시 적시성", value: "100%", desc: "30년 간 단 한 건의 불성실 공시 없음", icon: ShieldCheck },
               { label: "투자자 커버리지 확대", value: "+50%", desc: "기관 투자자 유입 및 리서치 리포트 활성화", icon: TrendingUp },
               { label: "투자 성공 포트폴리오", value: "10+", desc: "안철수연구소 등 대표적 엑시트 성공 사례", icon: Briefcase },
             ].map((stat, idx) => (

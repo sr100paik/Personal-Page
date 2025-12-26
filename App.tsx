@@ -103,10 +103,15 @@ const Footer = () => (
             <a href="mailto:sr100@kakao.com" className="hover:text-white transition-colors"><Mail size={20} /></a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Linkedin size={20} /></a>
           </div>
-          <button className="flex items-center space-x-2 text-sm bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-sm transition-colors">
+          <a 
+            href="https://res.cloudinary.com/dj1xp2ojh/image/upload/%EB%B0%B1%EC%8A%B9%EB%A3%A1_%EC%9D%B4%EB%A0%A5%EC%84%9C_20251223_edxuvp.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-sm bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-sm transition-colors"
+          >
             <Download size={16} />
             <span>이력서(PDF) 다운로드</span>
-          </button>
+          </a>
         </div>
       </div>
       <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
