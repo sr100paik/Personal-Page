@@ -69,7 +69,7 @@ const Services: React.FC = () => {
           <div className="flex items-center gap-3 mb-12">
             <div className="p-3 bg-white text-slate-900 rounded-lg"><Zap size={24} /></div>
             <div>
-              <h2 className="serif text-2xl font-bold">스타트업 성정 및 엑시트</h2>
+              <h2 className="serif text-2xl font-bold">스타트업 성장 및 엑시트</h2>
               <p className="text-sm text-slate-400">Startup Growth & M&A Strategy</p>
             </div>
           </div>
