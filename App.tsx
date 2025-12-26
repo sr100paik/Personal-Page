@@ -29,7 +29,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-2">
             <span className="serif text-xl font-bold tracking-tight text-slate-900">백승룡</span>
             <span className="text-slate-400 text-sm hidden sm:inline">|</span>
-            <span className="text-xs font-semibold text-slate-500 uppercase tracking-widest hidden sm:inline">Strategy & IR Expert</span>
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-widest hidden sm:inline">Strategy & IR/PR Expert</span>
           </Link>
 
           {/* Desktop Nav */}

@@ -52,7 +52,7 @@ const Main: React.FC = () => {
           
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { label: "DART 공시 적시성", value: "100%", desc: "30년 간 단 한 건의 불성실 공시 없음", icon: ShieldCheck },
+              { label: "DART 공시 적시성", value: "100%", desc: "단 한 건의 불성실 공시 없음", icon: ShieldCheck },
               { label: "투자자 커버리지 확대", value: "+50%", desc: "기관 투자자 유입 및 리서치 리포트 활성화", icon: TrendingUp },
               { label: "투자 성공 포트폴리오", value: "10+", desc: "안철수연구소 등 대표적 엑시트 성공 사례", icon: Briefcase },
             ].map((stat, idx) => (

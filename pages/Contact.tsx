@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
           <div>
             <h1 className="serif text-4xl font-bold text-slate-900 mb-6">Start a Partnership</h1>
             <p className="text-slate-600 text-lg leading-relaxed">
-              성공적인 IR 고도화와 투자 유치를 위한 파트너를 만나십시오.<br />
+              성공적인 IR/PR 고도화와 투자 유치를 위한 파트너를 만나십시오.<br />
               백승룡 전문가의 30년 인사이트가 귀사의 해답이 되어 드립니다.
             </p>
           </div>

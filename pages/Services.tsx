@@ -125,7 +125,7 @@ const Services: React.FC = () => {
         <div className="max-w-2xl mx-auto px-4">
           <h2 className="serif text-2xl font-bold mb-6">진단이 필요하신가요?</h2>
           <p className="text-slate-600 mb-8">
-            현재 기업의 IR 현황이나 ESG 지표, 또는 준비 중인 딜에 대해 
+            현재 기업의 IR/PR 현황이나 ESG 지표, 또는 준비 중인 딜에 대해 
             30분 이내의 가벼운 티타임으로 인사이트를 나눠보세요.
           </p>
           <Link to="/contact" className="inline-block bg-slate-900 text-white px-8 py-3 rounded-sm font-semibold hover:bg-slate-800 transition-colors">
