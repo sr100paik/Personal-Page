@@ -16,7 +16,7 @@ const TrackRecord: React.FC = () => {
       title: "㈜플레넷 대표이사 (창업, LS 그룹 계열, Spin-Off)",
       category: "Management & M&A",
       period: "1999 - 2021",
-      description: "LS그룹 계열사로서 M&A 성공 및 독립법인 운영. 현대·삼성건설 등 대형 건설사 대상 홈넷 사업 수주(5만 세대) 및 LG·삼성전자 공동 개발 네트워크 가전 출시.",
+      description: "LS그룹 계열사로서 M&A 성공 및 독립법인 운영. 현대·건설 홈넷 사업 수주(5만 세대) 및 LG·삼성전자 공동 개발 네트워크 가전 출시.",
       tags: ["CEO Experience", "LS Group M&A", "Global Business"],
       impact: "50bn KRW Investment Secured"
     },
@@ -110,13 +110,16 @@ const TrackRecord: React.FC = () => {
         </div>
 
         {/* Milestone Timeline */}
-        <div className="mt-24">
-          <div className="text-center mb-12">
+        <div className="mt-24 max-w-4xl mx-auto">
+          <div className="text-center mb-16">
             <h2 className="serif text-3xl font-bold">Full Career Timeline</h2>
             <p className="text-slate-500 mt-2">1992년부터 현재까지의 주요 경력</p>
           </div>
           
-          <div className="relative border-l-2 border-slate-200 ml-4 md:ml-0 md:left-1/2 space-y-12">
+          <div className="relative space-y-12">
+            {/* Vertical Line - Centered on MD and larger, left-aligned on mobile */}
+            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 md:-translate-x-1/2"></div>
+            
             {[
               { year: '2024 - 2026', title: '㈜엠플러스 ESG 기획실장', desc: '상장사 IR/PR/ESG 총괄' },
               { year: '2022 - 2023', title: '㈜지비스 부사장/CSO', desc: '인테리어 플랫폼 전략 및 제휴 확대' },
@@ -124,14 +127,21 @@ const TrackRecord: React.FC = () => {
               { year: '1992 - 1999', title: 'VC 3사 책임심사역', desc: '현대·LG·삼부벤처캐피탈 초기 투자' },
               { year: '1989', title: '한양대학교 경영학 석사', desc: 'IPO 가격 결정 연구' },
             ].map((milestone, i) => (
-              <div key={i} className={`relative flex flex-col md:flex-row items-center ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                <div className="absolute -left-[9px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-slate-900 rounded-full border-4 border-white"></div>
-                <div className={`w-full md:w-1/2 px-8 ${i % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
-                  <span className="font-bold text-blue-600">{milestone.year}</span>
-                  <h4 className="font-bold text-slate-900">{milestone.title}</h4>
-                  <p className="text-sm text-slate-500">{milestone.desc}</p>
+              <div key={i} className={`relative flex items-center justify-between w-full mb-8 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                {/* Dot */}
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-slate-900 rounded-full border-4 border-white md:-translate-x-1/2 z-10"></div>
+                
+                {/* Content side */}
+                <div className="w-full md:w-5/12 ml-12 md:ml-0 px-2">
+                  <div className={`p-4 bg-white ${i % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
+                    <span className="font-bold text-blue-600 block mb-1">{milestone.year}</span>
+                    <h4 className="font-bold text-slate-900 text-lg leading-snug">{milestone.title}</h4>
+                    <p className="text-sm text-slate-500 mt-1">{milestone.desc}</p>
+                  </div>
                 </div>
-                <div className="hidden md:block w-1/2 px-8"></div>
+                
+                {/* Empty side for layout on desktop */}
+                <div className="hidden md:block md:w-5/12"></div>
               </div>
             ))}
           </div>
