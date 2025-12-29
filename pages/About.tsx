@@ -68,7 +68,7 @@ const About: React.FC = () => {
               <div className="p-6 bg-slate-50 border border-slate-100">
                 <p className="text-xs text-slate-400 mb-2">Graduate School</p>
                 <p className="font-bold text-slate-800">한양대학교 경영학 석사</p>
-                <p className="text-xs text-slate-500 mt-1">IPO 가격 결정 연구</p>
+                <p className="text-xs text-slate-500 mt-1">1992 (IPO 가격 결정 연구)</p>
               </div>
               <div className="p-6 bg-slate-50 border border-slate-100">
                 <p className="text-xs text-slate-400 mb-2">University</p>

@@ -125,7 +125,7 @@ const TrackRecord: React.FC = () => {
               { year: '2022 - 2023', title: '㈜지비스 부사장/CSO', desc: '인테리어 플랫폼 전략 및 제휴 확대' },
               { year: '1999 - 2021', title: '㈜플레넷 (창업, LS그룹 계열, Spin-Off) 대표이사', desc: '22년간 경영 총괄 및 사업 확장' },
               { year: '1992 - 1999', title: 'VC 3사 책임심사역', desc: '현대·LG·삼부벤처캐피탈 초기 투자' },
-              { year: '1989', title: '한양대학교 경영학 석사', desc: 'IPO 가격 결정 연구' },
+              { year: '1992', title: '한양대학교 경영학 석사', desc: 'IPO 가격 결정 연구' },
             ].map((milestone, i) => (
               <div key={i} className={`relative flex items-center justify-between w-full mb-8 ${i % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                 {/* Dot */}
